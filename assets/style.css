@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, #009FFD,
+    #2A2A72);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+nav ul li a:hover {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+h1 span {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+h2 {
+    text-align: center;
+    color: black;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+
+/* INDEX */
+.Header {
+    background-image: url(../img/Fondo\ Logo.jpg);
+    background-size: cover;
+}
+.Fondo_Inicio {
+    background-image: url(../img/Fondo\ Logo.jpg);
+    background-size: cover;
+}
+#Texto_Inicio {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.Logo {
+    text-align: center;
+}
+.Carta {
+    text-align: center;
+}
+/* INDEX */
+/* HORROCRUXES */
+
+#Horrocruxes {
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 650px 420px 360px 750px 500px 600px;
+    grid-template-areas: 
+    "anillo"
+    "diario"
+    "copa"
+    "guarda"
+    "diadema"
+    "nagini"
+    "harry"
+    ;
+}
+@media only screen and (min-width: 768px) {
+#Horrocruxes {
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 250px 200px 150px 300px 250px 250px;
+        grid-template-areas: 
+        "anillo"
+        "diario"
+        "copa"
+        "guarda"
+        "diadema"
+        "nagini"
+        "harry"
+        ;
+    }  
+}
+
+@media only screen and (min-width: 1280px) {
+#Horrocruxes {
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 200px 200px 160px 200px 150px 200px;
+        grid-template-areas: 
+        "anillo"
+        "diario"
+        "copa"
+        "guarda"
+        "diadema"
+        "nagini"
+        "harry"
+        ;
+    }
+}
+
+.Anillo {
+    grid-area: anillo;
+    background-color: antiquewhite;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+.Diario {
+    grid-area: diario;
+    background-color: antiquewhite;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+.Copa {
+    grid-area: copa;
+    background-color: antiquewhite;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+.Guardapelo {
+    grid-area: guarda;
+    background-color: antiquewhite;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+.Diadema {
+    grid-area: diadema;
+    background-color: antiquewhite;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+.Nagini {
+    grid-area: nagini;
+    background-color: antiquewhite;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+.Harry {
+    grid-area: harry;
+    background-color: antiquewhite;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.Foto_Horrocrux_I {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.Foto_Horrocrux_D {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.Horrocrux_I {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.Horrocrux_D {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+/* HORROCRUXES */
+/* CASAS */
+
+
+
+
+
+
+footer p {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
