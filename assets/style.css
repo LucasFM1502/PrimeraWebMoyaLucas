@@ -47,6 +47,14 @@ h3 {
     color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
 }
+h4 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: goldenrod;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* INDEX */
 .Header {
@@ -201,18 +209,8 @@ h3 {
     text-align: center;
     padding-top: 10px;
 }
-/* HORROCRUXES */
-/* CASAS 
-#Casas_Completo {
-    display: grid;
-    row-gap: 50px;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(5, 400px);
-    grid-template-areas: 
-    
-    ;
-}
-*/
+
+/* CASAS */
 
 .Gryffindor {
     display: flex;
@@ -222,6 +220,7 @@ h3 {
     box-shadow: 5px 5px 10px black;
 }
 .CasaGryffindor {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -234,16 +233,39 @@ h3 {
     box-shadow: 5px 5px 10px black;
 }
 .CasaSlytherin {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
 
+/* QUERYS RESPONSIVE */
 @media only screen and (min-width:768px) {
     .Casas_Arriba {
         display: flex;
-        column-gap: 30px;
-        
+        column-gap: 30px;        
+    }
+    .CasaGryffindor {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .CasaSlytherin {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media only screen and (min-width:1280px) {
+    .Casas_Arriba {
+        display: flex;
+        column-gap: 30px;        
+    }
+    .CasaGryffindor {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .CasaSlytherin {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 
@@ -255,6 +277,7 @@ h3 {
     box-shadow: 5px 5px 10px black;
 }
 .CasaRavenclaw {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -267,11 +290,12 @@ h3 {
     box-shadow: 5px 5px 10px black;
 }
 .CasaHufflepuff {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
-
+/* QUERYS RESPONSIVE */
 @media only screen and (min-width:768px) {
     .Casas_Abajo {
         width: 100%;
@@ -280,7 +304,69 @@ h3 {
         column-gap: 20px;
         
     }
+    .CasaRavenclaw {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .CasaHufflepuff {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
+@media only screen and (min-width:1280px) {
+    .Casas_Abajo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        
+    }
+    .CasaRavenclaw {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .CasaHufflepuff {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* BATALLA DE HOGWARTS */
+#Fondo_Batalla {
+    background: url(../img/Batalla\ Fondo.jpg);
+    background-size: cover;
+}
+
+#Batalla_Video {
+    text-align: center;
+   
+}
+
+/* QUERYS RESPONSIVE VIDEO */
+@media only screen and (min-width: 768px) {
+    .Video_Batalla {
+        width: 560px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .Video_Batalla {
+        width: 560px;
+    }
+}
+
+#Batalla_Texto {
+    text-align: center;
+}
+
+.TextoBatalla {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* MENSAJE - FORMULARIO */
 
 footer p {
     color: black;
