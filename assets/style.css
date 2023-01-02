@@ -75,6 +75,8 @@ h5 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.9);
+    margin-left: 10px;
+    margin-right: 10px; 
 }
 .Logo {
     text-align: center;
@@ -216,6 +218,10 @@ h5 {
 }
 
 /* CASAS */
+#Casas_Completo {
+    margin-left: 10px;
+    margin-right: 10px; 
+}
 
 .Gryffindor {
     display: flex;
@@ -223,6 +229,7 @@ h5 {
     background-color: red;
     border-radius: 8px;
     box-shadow: 5px 5px 10px black;
+
 }
 .CasaGryffindor {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -248,7 +255,10 @@ h5 {
 @media only screen and (min-width:768px) {
     .Casas_Arriba {
         display: flex;
-        column-gap: 30px;        
+        column-gap: 30px; 
+        margin-left: 10px;
+        margin-right: 10px; 
+               
     }
     .CasaGryffindor {
         padding-right: 20px;
@@ -262,7 +272,9 @@ h5 {
 @media only screen and (min-width:1280px) {
     .Casas_Arriba {
         display: flex;
-        column-gap: 30px;        
+        column-gap: 30px;   
+        margin-left: 10px;
+        margin-right: 10px;     
     }
     .CasaGryffindor {
         padding-right: 20px;
@@ -307,6 +319,8 @@ h5 {
         display: flex;
         flex-direction: row;
         column-gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px; 
         
     }
     .CasaRavenclaw {
@@ -324,6 +338,8 @@ h5 {
         display: flex;
         flex-direction: row;
         column-gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px; 
         
     }
     .CasaRavenclaw {
@@ -378,12 +394,23 @@ h5 {
     background-size: cover;
 }
 
+.Formu {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+    
+}
+
 #Formulario {
-    width: 100%;
-    height: 300px;
+
+    height: 430px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: grey;
+    
     text-align: center;
 }
 
