@@ -6,6 +6,7 @@
 body {
     background-image: linear-gradient(to top, #009FFD,
     #2A2A72);
+    min-height: 100vh;
 }
 
  nav{
@@ -454,8 +455,8 @@ h5 {
 }
 
 .Formu {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     justify-content: center;
     background-color: grey;
@@ -466,7 +467,7 @@ h5 {
 
 #Formulario {
 
-    height: 430px;
+    height: 450px;
     padding-top: 20px;
     padding-bottom: 20px;
     
