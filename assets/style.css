@@ -8,24 +8,80 @@ body {
     #2A2A72);
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
+ nav{
+    height: 80px;
+    width: 100%;
 }
-
-nav ul li a {
-    color: white;
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px; 
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+    border-radius: 3px;
     text-decoration: none;
-    
 }
-nav ul li a:hover {
-    color: red;
+li a:hover{
+    background: #000090;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px; 
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 
+
+@media (max-width: 950px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 80vh;
+        background: #0a3d70;
+        top: 80px;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;   
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        font-size: 15px; 
+    }
+    li a:hover {
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+
+
+
+ 
 h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -69,6 +125,7 @@ h5 {
 .Fondo_Inicio {
     background-image: url(../img/Fondo\ Logo.jpg);
     background-size: cover;
+    min-height: 100vh;
 }
 #Texto_Inicio {
     text-align: center;
@@ -356,6 +413,7 @@ h5 {
 #Fondo_Batalla {
     background: url(../img/Batalla\ Fondo.jpg);
     background-size: cover;
+    min-height: 100vh;
 }
 
 #Batalla_Video {
@@ -392,6 +450,7 @@ h5 {
 .Fondo_Mensaje {
     background: url(../img/Mensaje\ Fondo.jpg);
     background-size: cover;
+    min-height: 100vh;
 }
 
 .Formu {
