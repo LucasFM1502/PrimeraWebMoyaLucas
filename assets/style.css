@@ -462,14 +462,14 @@ h5 {
     background-color: grey;
     border-radius: 8px;
     box-shadow: 5px 5px 10px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
     
 }
 
 #Formulario {
 
     height: 450px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     
     text-align: center;
 }
