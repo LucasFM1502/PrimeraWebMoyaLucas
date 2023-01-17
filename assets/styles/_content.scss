@@ -132,29 +132,29 @@ h5 {
 }
 .Diario {
     grid-area: diario;
+    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;
 }
 .Copa {
     grid-area: copa;
-    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;
 }
 .Guardapelo {
     grid-area: guarda;
+    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;;
 }
 .Diadema {
     grid-area: diadema;
-    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;
 }
 .Nagini {
     grid-area: nagini;
+    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;
 }
 .Harry {
     grid-area: harry;
-    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;
 }
 

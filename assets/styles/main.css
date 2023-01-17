@@ -166,29 +166,29 @@ h5 {
 
 .Diario {
   grid-area: diario;
+  background-color: rgb(32, 228, 32);
 }
 
 .Copa {
   grid-area: copa;
-  background-color: rgb(32, 228, 32);
 }
 
 .Guardapelo {
   grid-area: guarda;
+  background-color: rgb(32, 228, 32);
 }
 
 .Diadema {
   grid-area: diadema;
-  background-color: rgb(32, 228, 32);
 }
 
 .Nagini {
   grid-area: nagini;
+  background-color: rgb(32, 228, 32);
 }
 
 .Harry {
   grid-area: harry;
-  background-color: rgb(32, 228, 32);
 }
 
 .Foto_Horrocrux_I {
