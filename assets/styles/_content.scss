@@ -8,17 +8,19 @@
 
 h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: map-get(c.$fuentes, titulares );
     color: map-get(c.$colores, titular);
-}
-h1 span {
-    background-color: map-get(c.$colores, degrade);
+    
+    span {
+        background-color: map-get(c.$colores, degrade);
+    }
+
 }
 
 h2 {
     color: map-get(c.$colores, titular);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: map-get(c.$fuentes, titulares );
     font-size: 15px;
     font-weight: bolder;
 }
@@ -26,7 +28,7 @@ h2 {
 h3 {
     text-align: center;
     color: map-get(c.$colores, titular);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: map-get(c.$fuentes, titulares );
 }
 
 h4 {
@@ -35,20 +37,20 @@ h4 {
     font-size: 30px;
     color: map-get(c.$colores, titular-secundario);
     background-color: map-get(c.$colores, degrade);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: map-get(c.$fuentes, titulares );
 }
 
 h5 {
     text-align: center;
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: map-get(c.$fuentes, titulares );
 }
 
 /* INDEX */
 
 #Texto_Inicio {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: map-get(c.$fuentes, parrafosf);
     color: map-get(c.$colores, parrafo-inicio);
     background-color: map-get(c.$colores, degrade);
     margin-left: 10px;
@@ -117,6 +119,10 @@ h5 {
     }
 }
 
+@mixin container_grid($color-mixin: darkgreen){
+    background-color: $color-mixin;
+}
+
 .Anillo {
     grid-area: anillo;
     background-color: map-get(c.$colores, boxh-fondo);
@@ -130,6 +136,7 @@ h5 {
 }
 .Copa {
     grid-area: copa;
+    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;
 }
 .Guardapelo {
@@ -138,6 +145,7 @@ h5 {
 }
 .Diadema {
     grid-area: diadema;
+    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;
 }
 .Nagini {
@@ -146,6 +154,7 @@ h5 {
 }
 .Harry {
     grid-area: harry;
+    @include container_grid($color-mixin: rgb(32, 228, 32));
     @extend .Anillo;
 }
 
@@ -162,7 +171,7 @@ h5 {
 }
 .Horrocrux_I {
     position: relative;
-    color: black;
+    color: map-get(c.$colores, parrafo);
     font-weight: bold;
     text-align: center;
     padding-top: 10px;
@@ -186,7 +195,7 @@ h5 {
 
 }
 .CasaGryffindor {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: map-get(c.$fuentes, parrafosf);
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -318,7 +327,7 @@ h5 {
     color: map-get(c.$colores, parrafo-batalla);
     font-weight: bolder;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: map-get(c.$fuentes, parrafosf);
 }
 
 /* MENSAJE - FORMULARIO */
