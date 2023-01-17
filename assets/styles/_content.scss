@@ -1,0 +1,344 @@
+@use '_commons' as c;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: map-get(c.$colores, titular);
+}
+h1 span {
+    background-color: map-get(c.$colores, degrade);
+}
+
+h2 {
+    color: map-get(c.$colores, titular);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: center;
+    color: map-get(c.$colores, titular);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: map-get(c.$colores, titular-secundario);
+    background-color: map-get(c.$colores, degrade);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* INDEX */
+
+#Texto_Inicio {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: map-get(c.$colores, parrafo-inicio);
+    background-color: map-get(c.$colores, degrade);
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+.Logo {
+    text-align: center;
+}
+.Carta {
+    text-align: center;
+}
+
+/* HORROCRUXES */
+
+#Horrocruxes {
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 650px 420px 360px 750px 500px 600px;
+    grid-template-areas: 
+    "anillo"
+    "diario"
+    "copa"
+    "guarda"
+    "diadema"
+    "nagini"
+    "harry"
+    ;
+}
+
+/* QUERYS RESPONSIVE */
+
+@media only screen and (min-width: 768px) {
+#Horrocruxes {
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 250px 200px 150px 300px 250px 250px;
+        grid-template-areas: 
+        "anillo"
+        "diario"
+        "copa"
+        "guarda"
+        "diadema"
+        "nagini"
+        "harry"
+        ;
+    }  
+}
+
+@media only screen and (min-width: 1280px) {
+#Horrocruxes {
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 200px 200px 160px 200px 150px 200px;
+        grid-template-areas: 
+        "anillo"
+        "diario"
+        "copa"
+        "guarda"
+        "diadema"
+        "nagini"
+        "harry"
+        ;
+    }
+}
+
+.Anillo {
+    grid-area: anillo;
+    background-color: map-get(c.$colores, boxh-fondo);
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+.Diario {
+    grid-area: diario;
+    @extend .Anillo;
+}
+.Copa {
+    grid-area: copa;
+    @extend .Anillo;
+}
+.Guardapelo {
+    grid-area: guarda;
+    @extend .Anillo;;
+}
+.Diadema {
+    grid-area: diadema;
+    @extend .Anillo;
+}
+.Nagini {
+    grid-area: nagini;
+    @extend .Anillo;
+}
+.Harry {
+    grid-area: harry;
+    @extend .Anillo;
+}
+
+.Foto_Horrocrux_I {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.Foto_Horrocrux_D {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.Horrocrux_I {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.Horrocrux_D {
+    @extend .Horrocrux_I;
+}
+
+/* CASAS */
+#Casas_Completo {
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.Gryffindor {
+    display: flex;
+    justify-content: center;
+    background-color: map-get(c.$colores, fondo-gryff);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+
+}
+.CasaGryffindor {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.Slytherin {
+    @extend .Gryffindor;
+    background-color: map-get(c.$colores, fondo-sly);
+
+}
+.CasaSlytherin {
+    @extend .CasaGryffindor;
+}
+
+/* QUERYS RESPONSIVE */
+@media only screen and (min-width:768px) {
+    .Casas_Arriba {
+        display: flex;
+        column-gap: 30px; 
+        margin-left: 10px;
+        margin-right: 10px; 
+               
+    }
+    .CasaGryffindor {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .CasaSlytherin {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media only screen and (min-width:1280px) {
+    .Casas_Arriba {
+        display: flex;
+        column-gap: 30px;   
+        margin-left: 10px;
+        margin-right: 10px;     
+    }
+    .CasaGryffindor {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .CasaSlytherin {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+.Ravenclaw {
+    @extend .Gryffindor;
+    background-color: map-get(c.$colores, fondo-rav);
+}
+.CasaRavenclaw {
+    @extend .CasaGryffindor;
+}
+.Hufflepuff {
+    @extend .Gryffindor;
+    background-color: map-get(c.$colores, fondo-huff);
+}
+.CasaHufflepuff {
+    @extend .CasaGryffindor;
+}
+
+/* QUERYS RESPONSIVE */
+@media only screen and (min-width:768px) {
+    .Casas_Abajo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px; 
+        
+    }
+    .CasaRavenclaw {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .CasaHufflepuff {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media only screen and (min-width:1280px) {
+    .Casas_Abajo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px; 
+        
+    }
+    .CasaRavenclaw {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .CasaHufflepuff {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* BATALLA DE HOGWARTS */
+
+#Batalla_Video {
+    text-align: center;
+   
+}
+
+/* QUERYS RESPONSIVE VIDEO */
+@media only screen and (min-width: 768px) {
+    .Video_Batalla {
+        width: 560px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .Video_Batalla {
+        width: 560px;
+    }
+}
+
+#Batalla_Texto {
+    text-align: center;
+}
+
+.TextoBatalla {
+    background-color: map-get(c.$colores, degrade);
+    color: map-get(c.$colores, parrafo-batalla);
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* MENSAJE - FORMULARIO */
+
+.Formu {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: map-get(c.$colores, fondo-formu);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#Formulario {
+
+    height: 450px;
+    
+    text-align: center;
+}

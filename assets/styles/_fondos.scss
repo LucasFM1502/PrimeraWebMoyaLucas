@@ -1,0 +1,34 @@
+
+.Header {
+    background-image: url(../img/Fondo\ Logo.jpg);
+    background-size: cover;
+}
+
+#Fondo_Inicio {
+    background-image: url(../img/Fondo\ Logo.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#Fondo_Horro {
+    background-image: url(../img/Fondo\ Logo.jpg);
+    @extend #Fondo_Inicio ;
+}
+
+#Fondo_Casas {
+    background-image: url(../img/Fondo\ Logo.jpg);
+    @extend #Fondo_Inicio ;
+}
+
+#Fondo_Batalla {
+    background: url(../img/Batalla\ Fondo.jpg);
+    @extend #Fondo_Inicio ;
+    background-size: cover;
+}
+
+#Fondo_Mensaje {
+    background: url(../img/Mensaje\ Fondo.jpg);
+    @extend #Fondo_Inicio ;
+    background-size: cover;
+}
+
