@@ -133,7 +133,7 @@ h5 {
   display: grid;
   row-gap: 30px;
   grid-template-columns: 100%;
-  grid-template-rows: 200px 650px 420px 360px 750px 500px 600px;
+  grid-template-rows: 230px 680px 450px 360px 750px 500px 600px;
   grid-template-areas: "anillo" "diario" "copa" "guarda" "diadema" "nagini" "harry";
 }
 
