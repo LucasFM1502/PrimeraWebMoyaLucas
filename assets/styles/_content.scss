@@ -23,12 +23,16 @@ h2 {
     font-family: map-get(c.$fuentes, titulares );
     font-size: 15px;
     font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px; 
 }
 
 h3 {
     text-align: center;
     color: map-get(c.$colores, titular);
     font-family: map-get(c.$fuentes, titulares );
+    margin-left: 10px;
+    margin-right: 10px; 
 }
 
 h4 {
@@ -38,6 +42,8 @@ h4 {
     color: map-get(c.$colores, titular-secundario);
     background-color: map-get(c.$colores, degrade);
     font-family: map-get(c.$fuentes, titulares );
+    margin-left: 10px;
+    margin-right: 10px; 
 }
 
 h5 {
@@ -79,7 +85,10 @@ h5 {
     "nagini"
     "harry"
     ;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 
 /* QUERYS RESPONSIVE */
 
@@ -320,6 +329,8 @@ h5 {
 
 #Batalla_Texto {
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px; 
 }
 
 .TextoBatalla {
@@ -327,7 +338,6 @@ h5 {
     color: map-get(c.$colores, parrafo-batalla);
     font-weight: bolder;
     font-size: 20px;
-    font-family: map-get(c.$fuentes, parrafosf);
 }
 
 /* MENSAJE - FORMULARIO */
