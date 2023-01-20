@@ -141,8 +141,8 @@ h5 {
   grid-template-columns: 100%;
   grid-template-rows: 230px 680px 450px 360px 750px 500px 600px;
   grid-template-areas: "anillo" "diario" "copa" "guarda" "diadema" "nagini" "harry";
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 22px;
+  margin-right: 22px;
 }
 
 /* QUERYS RESPONSIVE */
